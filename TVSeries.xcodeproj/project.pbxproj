@@ -12,6 +12,13 @@
 		1B608111211976CF00D1F57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B60810F211976CF00D1F57D /* Main.storyboard */; };
 		1B608113211976CF00D1F57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B608112211976CF00D1F57D /* Assets.xcassets */; };
 		1B608116211976CF00D1F57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B608114211976CF00D1F57D /* LaunchScreen.storyboard */; };
+		1B60811E21197A7F00D1F57D /* TVSeriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B60811D21197A7F00D1F57D /* TVSeriesResponse.swift */; };
+		1B60812021198AD500D1F57D /* SeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B60811F21198AD500D1F57D /* SeriesTableViewCell.swift */; };
+		1B608122211999A000D1F57D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B608121211999A000D1F57D /* InfoViewController.swift */; };
+		1B608128211DB02000D1F57D /* EpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B608127211DB02000D1F57D /* EpisodesResponse.swift */; };
+		1B60812A211DD0FC00D1F57D /* EpisodesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B608129211DD0FC00D1F57D /* EpisodesTableViewCell.swift */; };
+		1B60812C211DD7D800D1F57D /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B60812B211DD7D800D1F57D /* CustomHeaderCell.swift */; };
+		A445138371E76FAFAC68F912 /* libPods-TVSeries.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB31AD41AD8A9521B5042DE8 /* libPods-TVSeries.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		1B608112211976CF00D1F57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B608115211976CF00D1F57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B608117211976CF00D1F57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B60811D21197A7F00D1F57D /* TVSeriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesResponse.swift; sourceTree = "<group>"; };
+		1B60811F21198AD500D1F57D /* SeriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesTableViewCell.swift; sourceTree = "<group>"; };
+		1B608121211999A000D1F57D /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1B608127211DB02000D1F57D /* EpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesResponse.swift; sourceTree = "<group>"; };
+		1B608129211DD0FC00D1F57D /* EpisodesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesTableViewCell.swift; sourceTree = "<group>"; };
+		1B60812B211DD7D800D1F57D /* CustomHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
+		310CDF5778220C9AC031EC98 /* Pods-TVSeries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeries.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVSeries/Pods-TVSeries.release.xcconfig"; sourceTree = "<group>"; };
+		C58BCCD34C264D30631B52E2 /* Pods-TVSeries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVSeries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVSeries/Pods-TVSeries.debug.xcconfig"; sourceTree = "<group>"; };
+		DB31AD41AD8A9521B5042DE8 /* libPods-TVSeries.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVSeries.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A445138371E76FAFAC68F912 /* libPods-TVSeries.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				1B60810A211976CF00D1F57D /* TVSeries */,
 				1B608109211976CF00D1F57D /* Products */,
+				727410EE9D1291CB35D8D41F /* Pods */,
+				378E8B88CBA0B4DAF4E9E06E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,69 @@
 		1B60810A211976CF00D1F57D /* TVSeries */ = {
 			isa = PBXGroup;
 			children = (
-				1B60810B211976CF00D1F57D /* AppDelegate.swift */,
-				1B60810D211976CF00D1F57D /* ViewController.swift */,
-				1B60810F211976CF00D1F57D /* Main.storyboard */,
-				1B608112211976CF00D1F57D /* Assets.xcassets */,
-				1B608114211976CF00D1F57D /* LaunchScreen.storyboard */,
 				1B608117211976CF00D1F57D /* Info.plist */,
+				1B608126211999E500D1F57D /* Cells */,
+				1B608125211999DB00D1F57D /* Models */,
+				1B608124211999BA00D1F57D /* Supporting Files */,
+				1B608123211999A300D1F57D /* Controllers */,
+				1B60810F211976CF00D1F57D /* Main.storyboard */,
 			);
 			path = TVSeries;
+			sourceTree = "<group>";
+		};
+		1B608123211999A300D1F57D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B608121211999A000D1F57D /* InfoViewController.swift */,
+				1B60810D211976CF00D1F57D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B608124211999BA00D1F57D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B608114211976CF00D1F57D /* LaunchScreen.storyboard */,
+				1B608112211976CF00D1F57D /* Assets.xcassets */,
+				1B60810B211976CF00D1F57D /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B608125211999DB00D1F57D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B60811D21197A7F00D1F57D /* TVSeriesResponse.swift */,
+				1B608127211DB02000D1F57D /* EpisodesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B608126211999E500D1F57D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B60811F21198AD500D1F57D /* SeriesTableViewCell.swift */,
+				1B608129211DD0FC00D1F57D /* EpisodesTableViewCell.swift */,
+				1B60812B211DD7D800D1F57D /* CustomHeaderCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		378E8B88CBA0B4DAF4E9E06E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB31AD41AD8A9521B5042DE8 /* libPods-TVSeries.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		727410EE9D1291CB35D8D41F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C58BCCD34C264D30631B52E2 /* Pods-TVSeries.debug.xcconfig */,
+				310CDF5778220C9AC031EC98 /* Pods-TVSeries.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +145,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B60811A211976CF00D1F57D /* Build configuration list for PBXNativeTarget "TVSeries" */;
 			buildPhases = (
+				A4B8BB63313AFBCD707B8270 /* [CP] Check Pods Manifest.lock */,
 				1B608104211976CF00D1F57D /* Sources */,
 				1B608105211976CF00D1F57D /* Frameworks */,
 				1B608106211976CF00D1F57D /* Resources */,
@@ -130,13 +205,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A4B8BB63313AFBCD707B8270 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVSeries-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B608104211976CF00D1F57D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B60812A211DD0FC00D1F57D /* EpisodesTableViewCell.swift in Sources */,
+				1B60811E21197A7F00D1F57D /* TVSeriesResponse.swift in Sources */,
 				1B60810E211976CF00D1F57D /* ViewController.swift in Sources */,
+				1B608128211DB02000D1F57D /* EpisodesResponse.swift in Sources */,
+				1B60812021198AD500D1F57D /* SeriesTableViewCell.swift in Sources */,
+				1B60812C211DD7D800D1F57D /* CustomHeaderCell.swift in Sources */,
 				1B60810C211976CF00D1F57D /* AppDelegate.swift in Sources */,
+				1B608122211999A000D1F57D /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +380,11 @@
 		};
 		1B60811B211976CF00D1F57D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58BCCD34C264D30631B52E2 /* Pods-TVSeries.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSATZE2MZ7;
 				INFOPLIST_FILE = TVSeries/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +399,11 @@
 		};
 		1B60811C211976CF00D1F57D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310CDF5778220C9AC031EC98 /* Pods-TVSeries.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSATZE2MZ7;
 				INFOPLIST_FILE = TVSeries/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

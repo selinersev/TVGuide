@@ -1,0 +1,6 @@
+module CodableAlamofire {
+  umbrella header "CodableAlamofire-umbrella.h"
+
+  export *
+  module * { export * }
+}
